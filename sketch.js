@@ -13,7 +13,7 @@ function preload() {
 
 function setup() {
 
-  var canvas = createCanvas(windowWidth,400);
+  var canvas = createCanvas(windowWidth,windowWidth/4);
   canvas.parent("main");
 
   systems = [];
@@ -66,5 +66,5 @@ function mousePressed(){
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, 400);
+  resizeCanvas(windowWidth, windowWidth/4);
 }
