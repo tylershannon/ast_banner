@@ -13,7 +13,7 @@ function preload() {
 
 function setup() {
 
-  createCanvas(windowWidth,800);
+  createCanvas(windowWidth,500);
 
   systems = [];
   for(var i =0;i<total;i++){
