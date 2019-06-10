@@ -37,7 +37,7 @@ function draw() {
       strokeWeight(1.0);
 
       if(distance<200){
-        var lineAlpha = map(distance,0,200,50,0);
+        var lineAlpha = map(distance,0,100,70,0);
         stroke(51,153,255,lineAlpha);
         line(systems[i].location.x,systems[i].location.y,systems[j].location.x,systems[j].location.y);
 
@@ -66,5 +66,5 @@ function mousePressed(){
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowWidth/4);
+  resizeCanvas(windowWidth, windowWidth/4,false);
 }
