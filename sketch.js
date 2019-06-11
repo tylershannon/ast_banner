@@ -69,4 +69,5 @@ function mousePressed(){
 
 function windowResized() {
   resizeCanvas(windowWidth, windowWidth/4,false);
+  total = windowWidth/24;
 }
