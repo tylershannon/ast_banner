@@ -19,18 +19,18 @@ function Particle(location, color){
 
     if(this.location.x < 0){
       this.location.x = width;
-      this.velocity = createVector(random(0,5),random(0,5));
+      this.velocity = createVector(random(0,1),random(0,1));
     }else if(this.location.x > width){
       this.location.x = 0;
-      this.velocity = createVector(random(0,5),random(0,5));
+      this.velocity = createVector(random(0,1),random(0,1));
     }
 
     if(this.location.y < 0){
       this.location.y = height;
-      this.velocity = createVector(random(0,5),random(0,5));
+      this.velocity = createVector(random(0,1),random(0,1));
     }else if(this.location.y > height){
       this.location.y = 0;
-      this.velocity = createVector(random(0,5),random(0,5));
+      this.velocity = createVector(random(0,1),random(0,1));
     }
 
   }
