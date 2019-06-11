@@ -16,7 +16,7 @@ function setup() {
   var canvas = createCanvas(windowWidth,windowWidth/4);
   canvas.parent("main");
 
-  total = windowWidth/24;
+  total = windowWidth/15;
 
   systems = [];
   for(var i =0;i<total;i++){
@@ -76,7 +76,7 @@ function mousePressed(){
 
 function windowResized() {
   resizeCanvas(windowWidth, windowWidth/4,false);
-  total = windowWidth/24;
+  total = windowWidth/15;
 
   systems = [];
   for(var i =0;i<total;i++){
