@@ -70,4 +70,8 @@ function mousePressed(){
 function windowResized() {
   resizeCanvas(windowWidth, windowWidth/4,false);
   total = windowWidth/24;
+  systems = [];
+  for(var i =0;i<total;i++){
+    systems.push(new Particle(createVector(floor(random(width)),floor(random(height)))));
+  }
 }
