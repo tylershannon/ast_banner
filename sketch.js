@@ -23,6 +23,13 @@ function setup() {
     systems.push(new Particle(createVector(floor(random(width)),floor(random(height)))));
   }
 
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    total = 20;
+    for(var i =0;i<total;i++){
+      systems.push(new Particle(createVector(floor(random(width)),floor(random(height)))));
+    }
+  }
+
 }
 
 function draw() {
@@ -70,8 +77,16 @@ function mousePressed(){
 function windowResized() {
   resizeCanvas(windowWidth, windowWidth/4,false);
   total = windowWidth/24;
+
   systems = [];
   for(var i =0;i<total;i++){
     systems.push(new Particle(createVector(floor(random(width)),floor(random(height)))));
+  }
+
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    total = 20;
+    for(var i =0;i<total;i++){
+      systems.push(new Particle(createVector(floor(random(width)),floor(random(height)))));
+    }
   }
 }
