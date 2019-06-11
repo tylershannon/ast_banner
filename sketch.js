@@ -16,6 +16,8 @@ function setup() {
   var canvas = createCanvas(windowWidth,windowWidth/4);
   canvas.parent("main");
 
+  total = windowWidth/24;
+
   systems = [];
   for(var i =0;i<total;i++){
     systems.push(new Particle(createVector(floor(random(width)),floor(random(height)))));
